@@ -68,7 +68,7 @@ type ConfigFile struct {
 }
 
 // newConfigFile creates an empty configuration representation.
-func NewConfigFile(fileNames []string) *ConfigFile {
+func newConfigFile(fileNames []string) *ConfigFile {
 	c := new(ConfigFile)
 	c.fileNames = fileNames
 	c.data = make(map[string]map[string]string)
